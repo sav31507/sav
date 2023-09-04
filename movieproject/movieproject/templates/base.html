@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+<body>
+
+<!--navbarrrrrrrrrrrr-->
+<nav class="navbar  bg-dark">
+  <a class="navbar-brand" href="#">
+    Bootstrap
+  </a>
+
+
+<!--    to add a button on nav bar aft this give this path on urls-->
+    <a href="{% url 'add' %}" class="btn btn-primary"> AddButton</a>
+
+</nav>
+
+
+
+
+<!--for the basepage to enter in index.html
+-->
+{% block body %}
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block body %}
+
+
+
+
+<div class="container">
+    <div class="row">
+    <div class="col-md-6">
+
+        <img src="{{c.image.url}}" height="300" width="300">
+    </div>
+        <div class="col-md-6">
+            <h2> {{c.name}}</h2>
+            <h2> {{c.des}}</h2>
+            <h2> {{c.year}}</h2>
+
+
+<!--            button for updation-->
+
+            <a href="{% url 'update' c.id %}" class='btn btn-primary'> UPDATE </a>
+            <a href="{% url 'delete' c.id %}" class='btn btn-primary'> DELETE </a>
+
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
